@@ -24,7 +24,7 @@ export default function Sandalias() {
             description: "em até 6x sem juros no cartão",
             price: 20.00,
             originalPrice: 25.00,
-            discount: 20
+            discount: Desconto(30.00,25.00)
         },
         {
           id: 2,
@@ -33,7 +33,7 @@ export default function Sandalias() {
           description: "em até 6x sem juros no cartão",
           price: 20.00,
           originalPrice: 25.00,
-          discount: 20
+          discount: Desconto(30.00,25.00)
       },
       {
         id: 3,
@@ -42,7 +42,7 @@ export default function Sandalias() {
         description: "em até 6x sem juros no cartão",
         price: 20.00,
         originalPrice: 25.00,
-        discount: 20
+        discount: Desconto(20.00,25.00)
     }
     ,{
       id: 4,
@@ -51,7 +51,7 @@ export default function Sandalias() {
       description: "em até 6x sem juros no cartão",
       price: 20.00,
       originalPrice: 25.00,
-      discount: 20
+      discount: Desconto(30.00,25.00)
   },{
     id: 5,
       image: `${sandalia4}`,
@@ -59,7 +59,7 @@ export default function Sandalias() {
       description: "em até 6x sem juros no cartão",
       price: 20.00,
       originalPrice: 25.00,
-      discount: 20
+      discount: Desconto(30.00,25.00)
   },{
     id: 6,
     image: `${sandalia5}`,
@@ -67,7 +67,7 @@ export default function Sandalias() {
     description: "em até 6x sem juros no cartão",
     price: 20.00,
     originalPrice: 25.00,
-    discount: 20
+    discount: Desconto(30.00,25.00)
 },{
     id: 7,
     image: `${sandalia6}`,
@@ -75,7 +75,7 @@ export default function Sandalias() {
     description: "em até 6x sem juros no cartão",
     price: 20.00,
     originalPrice: 25.00,
-    discount: 20
+    discount: Desconto(30.00,25.00)
 },{
     id: 8,
     image: `${sandalia7}`,
@@ -83,7 +83,7 @@ export default function Sandalias() {
     description: "em até 6x sem juros no cartão",
     price: 20.00,
     originalPrice: 25.00,
-    discount: 20
+    discount: Desconto(30.00,25.00)
 },{
     id: 9,
     image: `${sandalia3}`,
@@ -91,7 +91,7 @@ export default function Sandalias() {
     description: "em até 6x sem juros no cartão",
     price: 20.00,
     originalPrice: 25.00,
-    discount: 20
+    discount: Desconto(30.00,25.00)
 },{
     id: 10,
     image: `${sandalia4}`,
@@ -99,15 +99,22 @@ export default function Sandalias() {
     description: "em até 6x sem juros no cartão",
     price: 20.00,
     originalPrice: 25.00,
-    discount: 20
+    discount: Desconto(30.00,25.00)
 }
-]);
+])
+
+function Desconto(valor:number, desconto:number){
+   const discount = (valor - desconto);
+   return discount
+}
+
 console.log(setSandalias)
 
     return (
         <section className="grid grid-cols-2 scroll-smooth gap-x-6 justify-center xl:flex xl:flex-wrap xl:mx-6">
     {sandalias.map(sandalia => (
         <div key={sandalia.id} className="w-full">
+            <span className='relative top-7 left-2 rounded-md bg-rose-300 p-[0.2rem] text-full'>{sandalia.discount}%</span>
             <img
                 className="w-full h-[12rem] object-cover object-center rounded-xl xl:h-[20rem]"
                 src={sandalia.image}
