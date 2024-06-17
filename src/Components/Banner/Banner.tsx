@@ -2,7 +2,7 @@ import React from 'react';
 import Slider, { Settings } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Banner.css';
+
 import sandalia from "../../assets/sandalia.jpg"
 import sandalia1 from "../../assets/sandalia1.png"
 import sandalia2 from "../../assets/sandalia2.png"
@@ -13,8 +13,8 @@ interface ImageComponentProps {
 }
 
 const ImageComponent: React.FC<ImageComponentProps> = ({ src }) => (
-  <div className="h-full w-full">
-    <img src={src} alt="Carousel" className="h-full w-full object-cover" />
+  <div className="h-[25rem] xl:h-[28rem] xl:flex xl:items-center xl:justify-center">
+    <img src={src} alt="Carousel" className="h-full w-full object-cover xl:w-min" />
   </div>
 );
 
@@ -36,10 +36,10 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ images }) => {
   };
 
   return (
-    <div className='mt-[2.3px] mx-auto max-w-screen-xl custom-carousel h-fit'>
+    <div className='mt-[0.3px] mx-auto max-w-screen-xl custom-carousel h-[24.5rem] xl:h-[28rem]'>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="h-full">
+          <div key={index} className="h-fit">
             <ImageComponent src={image.src} />
           </div>
         ))}
