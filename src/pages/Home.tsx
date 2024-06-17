@@ -1,7 +1,5 @@
 
 import Banner from "@/Components/Banner/Banner";
-import Card_1 from "@/Components/Cards/Card-1";
-import Card_2 from "@/Components/Cards/Card-2";
 import { CiHeart } from "react-icons/ci";
 // import Card_3 from "@/Components/Cards/Card-3";
 import { Header } from "@/Components/Header/Header";
