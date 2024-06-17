@@ -40,7 +40,7 @@ export default function Home(){
                 </main>
             </div>
             <section id="whatsapp" className="fixed bottom-4 right-4 z-50">
-                <button className="h-[3.2rem] w-[3.2rem] bg-green-500 flex items-center justify-center rounded-full hover:cursor-pointer">
+                <button className="h-[3.2rem] w-[3.2rem] bg-green-500 flex items-center justify-center rounded-full hover:cursor-pointer p-3">
                     <ImWhatsapp className="h-9 w-9 text-white"/>
                 </button>
             </section>

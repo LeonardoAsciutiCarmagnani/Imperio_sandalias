@@ -2,7 +2,10 @@ import React from 'react';
 import Slider, { Settings } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Banner.css'; // Importe o arquivo CSS personalizado
+import './Banner.css';
+import sandalia from "../../assets/sandalia.jpg"
+import sandalia1 from "../../assets/sandalia1.png"
+import sandalia2 from "../../assets/sandalia2.png"
 
 // Definição das props do ImageComponent
 interface ImageComponentProps {
@@ -45,11 +48,11 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ images }) => {
   );
 };
 
-// Uso do componente com as imagens fornecidas
+
 const images = [
-  { src: 'https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' },
-  { src: 'https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' },
-  { src: 'https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' },
+  { src: `${sandalia}`},
+  { src: `${sandalia2}` },
+  { src: `${sandalia1}` },
 ];
 
 const Banner: React.FC = () => (
