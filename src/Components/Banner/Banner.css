@@ -1,0 +1,30 @@
+/* carousel.css */
+.custom-carousel {
+    height: 400px; /* Ajuste a altura conforme necessário */
+  }
+  
+  .custom-carousel .slick-list {
+    height: 100%;
+  }
+  
+  .custom-carousel .slick-track {
+    height: 100%;
+  }
+  
+  .custom-carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .custom-carousel .slick-slide div {
+    height: 100%;
+  }
+  
+  .custom-carousel img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço do slide */
+  }
+  
