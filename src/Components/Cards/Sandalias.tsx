@@ -92,7 +92,7 @@ export default function Sandalias() {
     discount: 20
 }
 ]);
-log(setSandalias);
+console.log(setSandalias)
 
     return (
         <section className="grid grid-cols-2 scroll-smooth gap-x-6">
