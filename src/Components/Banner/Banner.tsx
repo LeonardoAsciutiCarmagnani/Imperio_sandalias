@@ -32,7 +32,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ images }) => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 4000
   };
 
   return (

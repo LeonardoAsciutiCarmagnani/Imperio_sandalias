@@ -1,8 +1,7 @@
 import './App.css'
-import Home from './pages/Home'
-// import Banner from './Components/Banner/Banner'
-// import Card from './Components/Card/Card'
-// import { Header } from './Components/Header/Header
+import { BrowserRouter} from 'react-router-dom'
+import Rotas from "../src/Components/Router/Routes.tsx"
+import { AuthProvider } from './context/LoginContext.tsx'
 
 
 
@@ -10,12 +9,13 @@ import Home from './pages/Home'
 
 export default function App(){
   
-
   return (
     <>
-      <div>
-          <Home/>
-      </div>
+    <AuthProvider>
+      <BrowserRouter>
+        <Rotas/>
+      </BrowserRouter>
+    </AuthProvider>
     </>
   )
 }
